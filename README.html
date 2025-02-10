@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Training Template &#8212; Training Template</title>
+    <title>Jupyter Book Training Template &#8212; Training Template</title>
   
   
   
@@ -180,7 +180,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Training Template
+                    Jupyter Book Training Template
                 </a>
             </li>
         </ul>
@@ -368,7 +368,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Training Template</h1>
+    <h1>Jupyter Book Training Template</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,8 +378,17 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-edits">Template edits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-locally">Build locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-content">Adding Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-tips">Organization tips:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-locally">Building Locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serve-built-content-optional">Serve built content (optional)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment">Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-example-templates">Jupyter example templates</a></li>
 </ul>
             </nav>
@@ -392,37 +401,131 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="training-template">
-<h1>Training Template<a class="headerlink" href="#training-template" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book-training-template">
+<h1>Jupyter Book Training Template<a class="headerlink" href="#jupyter-book-training-template" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://img.shields.io/badge/GitHub-Pages-blue?logo=github"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub-Pages-blue?logo=github" /></a>
+<a class="reference external" href="https://jupyterbook.org"><img alt="Jupyter Book" src="https://img.shields.io/badge/Powered%20by-Jupyter%20Book-orange" /></a></p>
+<p>A customizable template for creating training materials on DesignSafe using <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>.</p>
 <blockquote>
-<div><p>Krishna Kumar, UT Austin</p>
+<div><p>Maintained by Krishna Kumar, University of Texas at Austin</p>
 </div></blockquote>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Template for DesignSafe training built using <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>.</p></li>
-<li><p>Fork this <a class="reference external" href="https://github.com/DesignSafe-CI/training-template">repo</a></p></li>
-<li><p>To add <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">In</span> <span class="pre">DesignSafe</span></code> in Jupyter Notebooks copy the jupyter notebook to Community Data and then point the URL to the folder in Community Data <code class="docutils literal notranslate"><span class="pre">https://jupyter.designsafe-ci.org/hub/user-redirect/lab/tree/CommunityData/</span></code></p></li>
-<li><p>The repo will automatically build a website using GitHub pages</p></li>
-</ul>
-<section id="template-edits">
-<h2>Template edits<a class="headerlink" href="#template-edits" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> Edit for title, author and URL</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> Set-up the table of contents</p></li>
-<li><p>You can write markdown and Jupyter Notebooks and add to table of contents <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+<li><p>Pre-configured Jupyter Book structure</p></li>
+<li><p>GitHub Pages integration</p></li>
+<li><p>DesignSafe-specific workflows</p></li>
+<li><p>Easy content authoring with Markdown/Jupyter Notebooks</p></li>
+<li><p>Customizable table of contents</p></li>
+<li><p>“Open in DesignSafe” button integration</p></li>
 </ul>
 </section>
-<section id="build-locally">
-<h2>Build locally<a class="headerlink" href="#build-locally" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a virtual env</span>
-<span class="n">virtualenv</span> <span class="n">env</span>
-<span class="n">source</span> <span class="n">env</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="c1"># Install required packages</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-<span class="c1"># Build your book</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">.</span>
+<section id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p><strong>Fork the Repository</strong><br />
+<a class="reference external" href="https://github.com/DesignSafe-CI/training-template/fork">Fork original repository</a></p></li>
+<li><p><strong>Enable GitHub Pages</strong><br />
+Go to Settings → Pages → Set source to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</p></li>
+<li><p><strong>Clone Your Fork</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/DesignSafe-CI/training-template.git
 </pre></div>
 </div>
-<p>This will create a <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> directory with all the files. Open the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file to start</p>
+</li>
+</ol>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Basic Settings (<code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>)</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your</span><span class="nv"> </span><span class="s">Training</span><span class="nv"> </span><span class="s">Title&quot;</span>
+<span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Your</span><span class="nv"> </span><span class="s">Name&quot;</span>
+<span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://your-username.github.io/training-template&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Table of Contents (<code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>)</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jb-book</span>
+<span class="nt">root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">intro</span>
+<span class="nt">chapters</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">path/to/chapter1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">path/to/chapter2</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>DesignSafe Integration</p></li>
+</ol>
+<p>To add “Open in DesignSafe” buttons:</p>
+<ul class="simple">
+<li><p>Upload notebooks to <code class="docutils literal notranslate"><span class="pre">Community</span> <span class="pre">Data</span> <span class="pre">&gt;&gt;</span> <span class="pre">Training</span></code></p></li>
+<li><p>Update notebook URLs to:
+<a class="reference external" href="https://jupyter.designsafe-ci.org/hub/user-redirect/lab/tree/CommunityData/Training/template/01-template-exercise.ipynb"><img alt="Try on DesignSafe" src="https://raw.githubusercontent.com/DesignSafe-CI/training-template/main/DesignSafe-Badge.svg" /></a></p></li>
+</ul>
+</section>
+<section id="adding-content">
+<h2>Adding Content<a class="headerlink" href="#adding-content" title="Link to this heading">#</a></h2>
+<p>Supported formats:</p>
+<ul class="simple">
+<li><p>📝 Markdown (.md)</p></li>
+<li><p>📓 Jupyter Notebooks (.ipynb)</p></li>
+<li><p>🔄 MyST Markdown</p></li>
+</ul>
+<section id="organization-tips">
+<h3>Organization tips:<a class="headerlink" href="#organization-tips" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── content/
+│   ├── intro.md
+│   ├── chapter1/
+│   │   ├── notebook.ipynb
+│   │   └── images/
+├── _toc.yml
+└── _config.yml
+</pre></div>
+</div>
+</section>
+</section>
+<section id="building-locally">
+<h2>Building Locally<a class="headerlink" href="#building-locally" title="Link to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create and activate virtual environment</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux/macOS</span>
+<span class="c1"># venv\Scripts\activate  # Windows</span>
+
+<span class="c1"># Install dependencies</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c1"># Build book</span>
+jupyter-book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="serve-built-content-optional">
+<h2>Serve built content (optional)<a class="headerlink" href="#serve-built-content-optional" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>python -m http.server –directory _build/html</p>
+</div></blockquote>
+</section>
+<section id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Link to this heading">#</a></h2>
+<p>Commit changes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span>git<span class="w"> </span>add<span class="w"> </span>.
+<span class="w">    </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update content&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+<p>GitHub Actions will automatically:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Build book
+
+- Deploy to GitHub Pages
+
+- View at: https://&lt;your-username&gt;.github.io/training-template
+</pre></div>
+</div>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
+<p>BSD 3-Clause License - See <a class="reference internal" href="LICENSE.html"><span class="std std-doc">LICENSE</span></a></p>
 </section>
 <section id="jupyter-example-templates">
 <h2>Jupyter example templates<a class="headerlink" href="#jupyter-example-templates" title="Link to this heading">#</a></h2>
@@ -493,8 +596,17 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-edits">Template edits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-locally">Build locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-content">Adding Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-tips">Organization tips:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-locally">Building Locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serve-built-content-optional">Serve built content (optional)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment">Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-example-templates">Jupyter example templates</a></li>
 </ul>
   </nav></div>
