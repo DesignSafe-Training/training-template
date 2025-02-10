@@ -157,8 +157,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Training Template - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Training Template - Home"/>
   
-    <p class="title logo__title">Training Template</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -374,6 +380,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-edits">Template edits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-locally">Build locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-example-templates">Jupyter example templates</a></li>
 </ul>
             </nav>
         </div>
@@ -406,6 +413,19 @@
 </section>
 <section id="build-locally">
 <h2>Build locally<a class="headerlink" href="#build-locally" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a virtual env</span>
+<span class="n">virtualenv</span> <span class="n">env</span>
+<span class="n">source</span> <span class="n">env</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="c1"># Install required packages</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="c1"># Build your book</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>This will create a <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> directory with all the files. Open the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file to start</p>
+</section>
+<section id="jupyter-example-templates">
+<h2>Jupyter example templates<a class="headerlink" href="#jupyter-example-templates" title="Link to this heading">#</a></h2>
 <p><strong>Exercise:</strong>
 <a class="reference external" href="https://jupyter.designsafe-ci.org/hub/user-redirect/lab/tree/CommunityData/Training/template/01-template-exercise.ipynb"><img alt="Try on DesignSafe" src="https://raw.githubusercontent.com/DesignSafe-CI/training-template/main/DesignSafe-Badge.svg" /></a></p>
 <p><a class="reference external" href="https://colab.research.google.com/github/DesignSafe-Training/DesignSafe-CI/blob/main/01-template-exercise.ipynb"><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
@@ -475,6 +495,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-edits">Template edits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-locally">Build locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-example-templates">Jupyter example templates</a></li>
 </ul>
   </nav></div>
 
