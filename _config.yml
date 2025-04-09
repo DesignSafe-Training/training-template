@@ -2,9 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Training Template
-author: Author Name
-logo: logo.png
-copyright: "2024"
+author: Krishna Kumar
+logo: nsf_nheri-ds.png
+copyright: "2025"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
